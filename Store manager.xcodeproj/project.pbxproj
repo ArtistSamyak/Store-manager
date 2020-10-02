@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		E3283AB32526BEA500EF937F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283AB22526BEA500EF937F /* AppDelegate.swift */; };
 		E3283AB52526BEA500EF937F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283AB42526BEA500EF937F /* SceneDelegate.swift */; };
-		E3283AB72526BEA500EF937F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283AB62526BEA500EF937F /* ViewController.swift */; };
 		E3283ABA2526BEA500EF937F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3283AB82526BEA500EF937F /* Main.storyboard */; };
 		E3283ABD2526BEA500EF937F /* Store_manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3283ABB2526BEA500EF937F /* Store_manager.xcdatamodeld */; };
 		E3283ABF2526BEA700EF937F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3283ABE2526BEA700EF937F /* Assets.xcassets */; };
 		E3283AC22526BEA700EF937F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3283AC02526BEA700EF937F /* LaunchScreen.storyboard */; };
 		E3283ACD2526BEA700EF937F /* Store_managerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283ACC2526BEA700EF937F /* Store_managerTests.swift */; };
 		E3283AD82526BEA700EF937F /* Store_managerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283AD72526BEA700EF937F /* Store_managerUITests.swift */; };
+		E3283AF02526C7E300EF937F /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3283AEF2526C7E300EF937F /* AuthVC.swift */; };
+		E3283B222526D06900EF937F /* AuthVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E3283B212526D06900EF937F /* AuthVid.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		E3283AAF2526BEA500EF937F /* Store manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Store manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3283AB22526BEA500EF937F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3283AB42526BEA500EF937F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3283AB62526BEA500EF937F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3283AB92526BEA500EF937F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3283ABC2526BEA500EF937F /* Store_manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store_manager.xcdatamodel; sourceTree = "<group>"; };
 		E3283ABE2526BEA700EF937F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		E3283AD32526BEA700EF937F /* Store managerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Store managerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3283AD72526BEA700EF937F /* Store_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store_managerUITests.swift; sourceTree = "<group>"; };
 		E3283AD92526BEA700EF937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3283AEF2526C7E300EF937F /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		E3283B212526D06900EF937F /* AuthVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AuthVid.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,10 @@
 			children = (
 				E3283AB22526BEA500EF937F /* AppDelegate.swift */,
 				E3283AB42526BEA500EF937F /* SceneDelegate.swift */,
-				E3283AB62526BEA500EF937F /* ViewController.swift */,
+				E3283AEE2526C7B100EF937F /* Controllers */,
 				E3283AB82526BEA500EF937F /* Main.storyboard */,
 				E3283ABE2526BEA700EF937F /* Assets.xcassets */,
+				E3283B212526D06900EF937F /* AuthVid.mp4 */,
 				E3283AC02526BEA700EF937F /* LaunchScreen.storyboard */,
 				E3283AC32526BEA700EF937F /* Info.plist */,
 				E3283ABB2526BEA500EF937F /* Store_manager.xcdatamodeld */,
@@ -129,6 +132,14 @@
 				E3283AD92526BEA700EF937F /* Info.plist */,
 			);
 			path = "Store managerUITests";
+			sourceTree = "<group>";
+		};
+		E3283AEE2526C7B100EF937F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3283AEF2526C7E300EF937F /* AuthVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				E3283AC22526BEA700EF937F /* LaunchScreen.storyboard in Resources */,
 				E3283ABF2526BEA700EF937F /* Assets.xcassets in Resources */,
 				E3283ABA2526BEA500EF937F /* Main.storyboard in Resources */,
+				E3283B222526D06900EF937F /* AuthVid.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3283AB72526BEA500EF937F /* ViewController.swift in Sources */,
 				E3283ABD2526BEA500EF937F /* Store_manager.xcdatamodeld in Sources */,
 				E3283AB32526BEA500EF937F /* AppDelegate.swift in Sources */,
+				E3283AF02526C7E300EF937F /* AuthVC.swift in Sources */,
 				E3283AB52526BEA500EF937F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
